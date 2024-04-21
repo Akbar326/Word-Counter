@@ -3,16 +3,16 @@
 import inquirer from "inquirer"
 
 const answers: {
-    sentece: string
+    sentence: string
 } = await inquirer.prompt([
     {
-        name: "sentece",
+        name: "sentence",
         type: "input",
         message: "Enter your sentece to count the word: "
     }
 ])
 
-const words = answers.sentece.trim().split(" ");
+const words = answers.sentence.trim().split(" ");
 
 console.log(words);
 
